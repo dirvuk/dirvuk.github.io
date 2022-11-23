@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="#ffffff" name="theme-color" />
+  <meta content="#da532c" name="msapplication-TileColor" />
+
+  
+  
+  <link color="#5bbad5" href='&#x2F;icons&#x2F;safari-pinned-tab.svg' rel="mask-icon" />
+  
+  
+  <link href='&#x2F;icons&#x2F;favicon-16x16.png' rel="icon" sizes="16x16" type="image/png" />
+  
+  
+  <link href='&#x2F;icons&#x2F;favicon-32x32.png' rel="icon" sizes="32x32" type="image/png" />
+  
+  
+  <link href='&#x2F;icons&#x2F;apple-touch-icon.png' rel="apple-touch-icon" sizes="180x180" />
+  
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/galleria@1.6.1/dist/themes/folio/galleria.folio.min.css" integrity="sha384-+rY0QD+LRnTOquDMzGa9lXU6jIwdiQuwCJQ2cdcW0qeP/0UbjQCZlXnRsUMA+9pH" crossorigin="anonymous">
+  
+
+  
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.1/css/academicons.min.css" integrity="sha384-FIue+PI4SsI9XfHCz8dBLg33b0c1fMJgNU3X//L26FYbGnlSEfWmNT7zgWc2N9b6" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" integrity="sha256-rTpdO0HXBCNpreAHcu6tB2Ppg515Vo+5GtYSsnNLz+8=" crossorigin="anonymous">
+  <link href="https://dirvuk.github.io/deep-thought.css" rel="stylesheet" />
+  
+  
+
+  <title>
+    
+Yauheni Dzirvuk | Radau-type quadrature formulas
+
+  </title>
+
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-250041526-1"></script>
+  <script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-250041526-1");
+  </script>
+  
+  
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/mathtex-script-type.min.js" integrity="sha384-jiBVvJ8NGGj5n7kJaiWwWp9AjC+Yh8rhZY3GtAX8yU28azcLgoRo4oukO87g7zDT" crossorigin="anonymous"></script>
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+  
+  
+</head>
+
+<body class="has-background-white">
+  <nav aria-label="section navigation" class="navbar is-light" role="navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item is-size-5 has-text-weight-bold" href="https:&#x2F;&#x2F;dirvuk.github.io">Yauheni Dzirvuk</a>
+        <a aria-expanded="false" aria-label="menu" class="navbar-burger burger" data-target="navMenu" role="button">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-end has-text-centered">
+          
+          
+          
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;dirvuk.github.io&#x2F;">
+            Home
+          </a>
+          
+          
+          
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;dirvuk.github.io&#x2F;publications">
+            Publications
+          </a>
+          
+          
+          
+          <!-- Open download links (e.g. CV) in a new tab -->
+          <a class="navbar-item has-text-weight-semibold" href="https:&#x2F;&#x2F;docs.google.com&#x2F;document&#x2F;d&#x2F;1K89xdagmX3XrVlcpEOgGUXr165p-Yy5-A3CRKWpiy08&#x2F;edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+            CV
+          </a>
+          
+          
+          
+          
+          <a class="navbar-item" id="nav-search" title="Search" data-target="#search-modal">
+            <span class="icon">
+              <i class="fas fa-search"></i>
+            </span>
+          </a>
+          <a class="navbar-item" id="dark-mode" title="Switch to dark theme">
+            <span class="icon">
+              <i class="fas fa-adjust"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  
+  
+
+  
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-8 is-offset-2">
+        <article>
+          <h1 class="title">
+            Radau-type quadrature formulas
+          </h1>
+          <p class="subtitle" style="margin-bottom: 0">Y. Dirvuk, K. Smatrytski, Journal of the Belarusian State University. 2014</p>
+          
+            <a href='https:&#x2F;&#x2F;elib.bsu.by&#x2F;handle&#x2F;123456789&#x2F;113722' > Paper link </a>
+          
+          
+            (in Russian)
+          
+          <div class="content mt-2">
+            <p>The research object of this paper are the quadrature formula rational interpolation type on the segment. The major goal is the construction of Radau type quadrature formulas and some of their properties research. At the beginning of the paper specifi ed relevance
+of research theme and references to some related articles. The rational interpolating Lagrange functions construction with nodes in the
+zeros of Chebyshev – Markov sine-fractures and one fi xed point of –1 and 1 is considered in the present paper. The main part of the paper is devoted to the computation of the coeffi cients of Radau-type quadrature formulas constructed with the use of specifi ed Lagrange
+functions and estimation of their error in particular. The received results can be used in further research of quadrature formulas and for
+studying the properties of rational interpolating functions.</p>
+<span id="continue-reading"></span><h3 id="citation">Citation:</h3>
+<pre data-lang="bibtex" style="background-color:#2b303b;color:#6c7079;" class="language-bibtex "><code class="language-bibtex" data-lang="bibtex"><span style="color:#cd74e8;">@inproceedings</span><span style="color:#abb2bf;">{quasi-Hermite-Fejer-type-interpolation-2015,
+</span><span style="color:#abb2bf;">    </span><span style="color:#9acc76;">title </span><span style="color:#abb2bf;">= </span><span style="color:#9acc76;">&quot;Radau-type quadrature formulas&quot;</span><span style="color:#abb2bf;">,
+</span><span style="color:#abb2bf;">    </span><span style="color:#9acc76;">author </span><span style="color:#abb2bf;">= </span><span style="color:#9acc76;">&quot;Smatrytski, Kanstantin  and
+</span><span style="color:#9acc76;">        Dirvuk, Yauheni&quot;</span><span style="color:#abb2bf;">,
+</span><span style="color:#abb2bf;">    </span><span style="color:#9acc76;">booktitle </span><span style="color:#abb2bf;">= </span><span style="color:#9acc76;">&quot;Series 2. Physics. Mathematics. Informatics&quot;</span><span style="color:#abb2bf;">,
+</span><span style="color:#abb2bf;">    </span><span style="color:#9acc76;">number </span><span style="color:#abb2bf;">= </span><span style="color:#9acc76;">&quot;1&quot;</span><span style="color:#abb2bf;">,
+</span><span style="color:#abb2bf;">    </span><span style="color:#9acc76;">year </span><span style="color:#abb2bf;">= </span><span style="color:#9acc76;">&quot;2014&quot;</span><span style="color:#abb2bf;">,
+</span><span style="color:#abb2bf;">    </span><span style="color:#9acc76;">publisher </span><span style="color:#abb2bf;">= </span><span style="color:#9acc76;">&quot;Journal of the Belarusian State University&quot;</span><span style="color:#abb2bf;">,
+</span><span style="color:#abb2bf;">    </span><span style="color:#9acc76;">pages </span><span style="color:#abb2bf;">= </span><span style="color:#9acc76;">&quot;87--91&quot;
+</span><span style="color:#abb2bf;">    }
+</span></code></pre>
+
+          </div>
+        </article>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+  
+  <section class="modal" id="search-modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Search</p>
+      </header>
+      <section class="modal-card-body">
+        <div class="field mb-2">
+          <div class="control">
+            <input class="input" id="search" placeholder="Search this website." type="search" />
+          </div>
+        </div>
+        <div class="search-results">
+          <div class="search-results__items"></div>
+        </div>
+      </section>
+    </div>
+    <button aria-label="close" class="modal-close is-large"></button>
+  </section>
+  
+
+
+  
+
+
+
+  
+
+
+
+  
+  <footer class="footer py-4">
+    <div class="content has-text-centered">
+      <p>
+        Powered by
+        <span class="icon-text">
+          <span class="icon">
+            <i class="fas fa-power-off"></i>
+          </span>
+          <span>zola</span>
+        </span>
+      </p>
+    </div>
+  </footer>
+  
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/galleria@1.6.1/dist/galleria.min.js" integrity="sha384-QSfwGT8/EU536DKdtyP2D6SLlh8zBaZ0cVkwfrwhqzIU9VCfJT00CLVP5t+HAiYg" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/galleria@1.6.1/dist/themes/folio/galleria.folio.min.js" integrity="sha384-DwpKI+deZB267+hPKwiOIc5Y2GKsVL0mR6hgz7GgIu7AgAMYqJwcJKY1YBNfhWcY" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@8.13.5/dist/mermaid.min.js" integrity="sha384-0yWn54pSGtfKCU+skfA69l25VsCw+MZt4LQov3xNRoS7YkAMrFokGgSBnAWSK4pv" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.xkcd@1.1.13/dist/chart.xkcd.min.js" integrity="sha384-xC3h1+IHXK8seA+8KfT79Z4e0GPsznjXBoMa5nd8ooWKplPyXx92NOmljWxLC/cs" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://dirvuk.github.io/elasticlunr.min.js"></script>
+  <script src="https://dirvuk.github.io/search_index.en.js"></script><script src="https://dirvuk.github.io/js/site.js"></script>
+
+  
+
+
+
+
+
+  
+  
+</body>
+
+</html>
