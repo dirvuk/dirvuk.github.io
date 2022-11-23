@@ -193,7 +193,7 @@ cv = "https://docs.google.com/document/d/1K89xdagmX3XrVlcpEOgGUXr165p-Yy5-A3CRKW
 telegram = "dirvuk"
 
 [extra.analytics]
-google = "G-JFLH1MBYEX"
+google = "UA-250041526-1"
 
 #[extra.commenting]
 #disqus = "deepthought-theme"
